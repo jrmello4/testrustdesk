@@ -6,6 +6,13 @@ on:
         description: Release tag
         required: true
         default: v1.5.0-1
+
+permissions:
+  contents: write
+  actions: read
+  checks: read
+  id-token: write
+
 jobs:
   call:
     uses: ./.github/workflows/flutter-build.yml
