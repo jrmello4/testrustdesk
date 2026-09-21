@@ -1,0 +1,10 @@
+﻿name: Test Index
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+jobs:
+  ok:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ok
